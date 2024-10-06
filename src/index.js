@@ -48,6 +48,8 @@
         taskContent.classList.add('task-text');
         taskContent.textContent = `${taskText} - Priority: ${priorityValue}`;
 
+        updateTaskColor(taskContent, priorityValue);
+        
         const dueDateSpan = document.createElement('span');
         dueDateSpan.classList.add('due-date');
         if (dueDateValue) {
